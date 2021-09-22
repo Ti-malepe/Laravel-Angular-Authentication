@@ -7,6 +7,8 @@ import { LoginComponent } from './component/login/login.component';
 import { SignMeUpComponent } from './component/sign-me-up/sign-me-up.component';
 import { RequestResetComponent } from './component/password/request-reset/request-reset.component';
 import { ResponseResetComponent } from './component/password/response-reset/response-reset.component';
+import { AppRoutingModule } from './app-routing.module';
+import { ProfileComponent } from './component/profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -15,10 +17,12 @@ import { ResponseResetComponent } from './component/password/response-reset/resp
     LoginComponent,
     SignMeUpComponent,
     RequestResetComponent,
-    ResponseResetComponent
+    ResponseResetComponent,
+    ProfileComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
